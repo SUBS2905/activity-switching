@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/img3">
+
+    <TextView
+        android:id="@+id/textview1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Relative Layout Activity"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:layout_centerHorizontal="true"
+        android:layout_marginVertical="50dp" />
+
+    <TextView
+        android:id="@+id/nametext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textview1"
+        android:textColor="@color/white"
+        android:text="Name:"
+        android:layout_marginHorizontal="20dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/textview1"
+        android:layout_toEndOf="@+id/nametext"
+        android:layout_marginStart="65dp"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white" />
+    <TextView
+        android:id="@+id/regtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nametext"
+        android:textColor="@color/white"
+        android:text="Registration No.:"
+        android:layout_marginTop="20dp"
+        android:layout_marginHorizontal="20dp" />
+
+    <EditText
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/nametext"
+        android:layout_toEndOf="@+id/regtext"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/white" />
+
+    <Button
+        android:id="@+id/backbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Back" />
+
+</RelativeLayout>
